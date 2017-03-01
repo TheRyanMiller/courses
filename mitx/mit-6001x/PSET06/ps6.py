@@ -230,8 +230,8 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
-        best_shift = None
-        best_real_words = None
+        best_shift = 0
+        best_real_words = 0
         best_msg = ""
 
         # words = self.get_message_text().split()
